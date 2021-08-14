@@ -20,11 +20,12 @@ require (
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/prometheus/client_golang v1.1.0
 	github.com/robfig/cron/v3 v3.0.1
-	github.com/shirou/gopsutil v2.20.7+incompatible
+	github.com/shirou/gopsutil v3.21.7+incompatible
 	github.com/spf13/cast v1.3.1
 	github.com/spf13/cobra v1.0.0
 	github.com/swaggo/gin-swagger v1.2.0
 	github.com/swaggo/swag v1.6.7
+	github.com/tklauser/go-sysconf v0.3.7 // indirect
 	github.com/ugorji/go v1.2.6 // indirect
 	github.com/unrolled/secure v1.0.8
 	golang.org/x/crypto v0.0.0-20210813211128-0a44fdfbc16e
