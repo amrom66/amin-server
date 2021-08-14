@@ -12,10 +12,10 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service"
-	"go-admin/common/apis"
+	"amin/app/admin/models"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service"
+	"amin/common/apis"
 )
 
 // LoggerToFile 日志记录到文件

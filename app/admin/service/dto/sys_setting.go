@@ -2,11 +2,11 @@ package dto
 
 import (
 	"encoding/json"
-	"go-admin/common/apis"
+	"amin/common/apis"
 
 	"github.com/gin-gonic/gin"
 
-	"go-admin/app/admin/models"
+	"amin/app/admin/models"
 )
 
 // SysConfigControl 增、改使用的结构体

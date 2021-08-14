@@ -6,11 +6,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/apis"
-	"go-admin/common/global"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service"
+	"amin/app/admin/service/dto"
+	"amin/common/apis"
+	"amin/common/global"
 )
 
 type SysRole struct {

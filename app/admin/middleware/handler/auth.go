@@ -12,9 +12,9 @@ import (
 	"github.com/mojocn/base64Captcha"
 	"github.com/mssola/user_agent"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service"
-	"go-admin/common/apis"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service"
+	"amin/common/apis"
 )
 
 var store = base64Captcha.DefaultMemStore

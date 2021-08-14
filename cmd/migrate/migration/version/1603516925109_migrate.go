@@ -3,9 +3,9 @@ package version
 import (
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/cmd/migrate/migration"
-	common "go-admin/common/models"
+	"amin/app/admin/models/system"
+	"amin/cmd/migrate/migration"
+	common "amin/common/models"
 
 	"runtime"
 )

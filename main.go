@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-admin/cmd"
+	"amin/cmd"
 )
 
 func main() {

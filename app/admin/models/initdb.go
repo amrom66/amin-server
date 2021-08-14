@@ -1,8 +1,8 @@
 package models
 
 import (
+	"amin/common/global"
 	"fmt"
-	"go-admin/common/global"
 	"gorm.io/gorm"
 	"io/ioutil"
 	"log"

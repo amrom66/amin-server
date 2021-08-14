@@ -1,9 +1,9 @@
 package version
 
 import (
+	"amin/common/global"
 	"fmt"
 	"github.com/spf13/cobra"
-	"go-admin/common/global"
 )
 
 var (

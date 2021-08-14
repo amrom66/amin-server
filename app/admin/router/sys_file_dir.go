@@ -3,8 +3,8 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"go-admin/app/admin/apis/sys_file"
-	middleware2 "go-admin/common/middleware"
+	"amin/app/admin/apis/sys_file"
+	middleware2 "amin/common/middleware"
 )
 
 func init() {

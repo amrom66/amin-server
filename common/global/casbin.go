@@ -1,10 +1,10 @@
 package global
 
 import (
+	"amin/common/apis"
 	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
 	"github.com/go-admin-team/go-admin-core/sdk"
-	"go-admin/common/apis"
 )
 
 func LoadPolicy(c *gin.Context) (*casbin.SyncedEnforcer, error) {

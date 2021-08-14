@@ -8,7 +8,7 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 
-	"go-admin/common/apis"
+	"amin/common/apis"
 )
 
 //权限检查中间件

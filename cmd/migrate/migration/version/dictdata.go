@@ -1,7 +1,7 @@
 package version
 
 import (
-	"go-admin/app/admin/models"
+	"amin/app/admin/models"
 )
 
 type DictData struct {

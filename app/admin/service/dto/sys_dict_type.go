@@ -2,11 +2,11 @@ package dto
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-admin/common/apis"
+	"amin/common/apis"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"amin/app/admin/models/system"
+	"amin/common/dto"
+	common "amin/common/models"
 )
 
 type SysDictTypeSearch struct {

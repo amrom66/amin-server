@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"go-admin/common/apis"
+	"amin/common/apis"
 )
 
 type ObjectById struct {

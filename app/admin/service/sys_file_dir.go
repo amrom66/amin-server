@@ -6,11 +6,11 @@ import (
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/actions"
-	cDto "go-admin/common/dto"
-	"go-admin/common/service"
+	"amin/app/admin/models"
+	"amin/app/admin/service/dto"
+	"amin/common/actions"
+	cDto "amin/common/dto"
+	"amin/common/service"
 )
 
 type SysFileDir struct {

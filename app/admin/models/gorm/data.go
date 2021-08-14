@@ -1,7 +1,7 @@
 package gorm
 
 import (
-	"go-admin/app/admin/models/system"
+	"amin/app/admin/models/system"
 	"gorm.io/gorm"
 )
 

@@ -1,6 +1,6 @@
 package system
 
-import "go-admin/common/models"
+import "amin/common/models"
 
 type SysPost struct {
 	PostId   int    `gorm:"primaryKey;autoIncrement" json:"postId"` //岗位编号

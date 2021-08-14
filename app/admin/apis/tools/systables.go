@@ -10,8 +10,8 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models/tools"
-	"go-admin/common/apis"
+	"amin/app/admin/models/tools"
+	"amin/common/apis"
 )
 
 // @Summary 分页列表数据

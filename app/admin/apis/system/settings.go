@@ -7,10 +7,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/apis"
+	"amin/app/admin/models"
+	"amin/app/admin/service"
+	"amin/app/admin/service/dto"
+	"amin/common/apis"
 )
 
 type SysSetting struct {

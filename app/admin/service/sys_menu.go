@@ -1,12 +1,12 @@
 package service
 
 import (
+	"amin/app/admin/models/system"
+	"amin/app/admin/service/dto"
+	cDto "amin/common/dto"
+	"amin/common/service"
 	"errors"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
-	"go-admin/common/service"
 	"gorm.io/gorm"
 )
 

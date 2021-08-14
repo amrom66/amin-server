@@ -9,9 +9,9 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg"
 	"gorm.io/gorm"
 
+	"amin/common/dto"
+	"amin/common/models"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
-	"go-admin/common/dto"
-	"go-admin/common/models"
 )
 
 // ViewAction 通用详情动作

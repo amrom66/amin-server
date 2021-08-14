@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models/system"
+	"amin/app/admin/models/system"
 )
 
 type Menu struct {

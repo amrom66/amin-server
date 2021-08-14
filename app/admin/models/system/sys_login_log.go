@@ -1,7 +1,7 @@
 package system
 
 import (
-	"go-admin/common/models"
+	"amin/common/models"
 
 	"time"
 )

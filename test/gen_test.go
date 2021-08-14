@@ -1,10 +1,7 @@
 package test
 
 import (
-	//"go-admin/models/tools"
-	//"os"
 	"testing"
-	//"text/template"
 )
 
 func TestGoModelTemplate(t *testing.T) {

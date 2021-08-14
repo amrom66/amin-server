@@ -8,9 +8,9 @@ import (
 	"github.com/gin-gonic/gin"
 	log "github.com/go-admin-team/go-admin-core/logger"
 
-	"go-admin/app/admin/middleware"
-	"go-admin/app/admin/middleware/handler"
-	common "go-admin/common/middleware"
+	"amin/app/admin/middleware"
+	"amin/app/admin/middleware/handler"
+	common "amin/common/middleware"
 
 	"github.com/go-admin-team/go-admin-core/sdk/config"
 )

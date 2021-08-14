@@ -1,6 +1,6 @@
 package system
 
-import "go-admin/common/models"
+import "amin/common/models"
 
 type SysRole struct {
 	RoleId    int    `json:"roleId" gorm:"primaryKey;autoIncrement"` // 角色编码

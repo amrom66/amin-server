@@ -1,19 +1,19 @@
 package router
 
 import (
-	"go-admin/app/admin/apis/system/sys_menu"
-	middleware2 "go-admin/common/middleware"
+	"amin/app/admin/apis/system/sys_menu"
+	middleware2 "amin/common/middleware"
 	"mime"
 
+	"amin/app/admin/apis/monitor"
+	"amin/app/admin/apis/public"
+	"amin/app/admin/apis/system"
+	"amin/app/admin/apis/system/dict"
+	. "amin/app/admin/apis/tools"
+	"amin/app/admin/middleware/handler"
+	_ "amin/docs"
 	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/ws"
-	"go-admin/app/admin/apis/monitor"
-	"go-admin/app/admin/apis/public"
-	"go-admin/app/admin/apis/system"
-	"go-admin/app/admin/apis/system/dict"
-	. "go-admin/app/admin/apis/tools"
-	"go-admin/app/admin/middleware/handler"
-	_ "go-admin/docs"
 
 	"github.com/gin-gonic/gin"
 	ginSwagger "github.com/swaggo/gin-swagger"

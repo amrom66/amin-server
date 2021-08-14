@@ -6,11 +6,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/apis"
-	common "go-admin/common/models"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service"
+	"amin/app/admin/service/dto"
+	"amin/common/apis"
+	common "amin/common/models"
 )
 
 type SysDictData struct {

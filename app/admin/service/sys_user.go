@@ -5,11 +5,11 @@ import (
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/common/actions"
-	cDto "go-admin/common/dto"
-	common "go-admin/common/models"
-	"go-admin/common/service"
+	"amin/app/admin/models/system"
+	"amin/common/actions"
+	cDto "amin/common/dto"
+	common "amin/common/models"
+	"amin/common/service"
 )
 
 type SysUser struct {

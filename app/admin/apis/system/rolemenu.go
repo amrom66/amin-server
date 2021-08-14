@@ -1,7 +1,7 @@
 package system
 
 import (
-	"go-admin/app/admin/models"
+	"amin/app/admin/models"
 )
 
 // @Summary RoleMenu列表数据

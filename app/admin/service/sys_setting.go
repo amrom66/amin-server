@@ -5,8 +5,8 @@ import (
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models"
-	"go-admin/common/service"
+	"amin/app/admin/models"
+	"amin/common/service"
 )
 
 type SysSetting struct {

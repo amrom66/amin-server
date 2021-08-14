@@ -6,10 +6,10 @@ import (
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
-	"go-admin/common/service"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service/dto"
+	cDto "amin/common/dto"
+	"amin/common/service"
 )
 
 type SysDept struct {

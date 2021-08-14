@@ -10,9 +10,9 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/models/tools"
-	"go-admin/common/apis"
+	"amin/app/admin/models"
+	"amin/app/admin/models/tools"
+	"amin/common/apis"
 )
 
 func Preview(c *gin.Context) {

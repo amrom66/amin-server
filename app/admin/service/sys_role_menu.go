@@ -2,9 +2,9 @@ package service
 
 import (
 	log "github.com/go-admin-team/go-admin-core/logger"
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/models/system"
-	"go-admin/common/service"
+	"amin/app/admin/models"
+	"amin/app/admin/models/system"
+	"amin/common/service"
 	"gorm.io/gorm"
 )
 

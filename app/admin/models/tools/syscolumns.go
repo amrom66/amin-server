@@ -1,7 +1,7 @@
 package tools
 
 import (
-	"go-admin/app/admin/models"
+	"amin/app/admin/models"
 	"gorm.io/gorm"
 )
 

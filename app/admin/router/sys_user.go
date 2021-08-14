@@ -1,11 +1,11 @@
 package router
 
 import (
+	"amin/app/admin/apis/sys_user"
+	"amin/common/actions"
+	middleware2 "amin/common/middleware"
 	"github.com/gin-gonic/gin"
 	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"go-admin/app/admin/apis/sys_user"
-	"go-admin/common/actions"
-	middleware2 "go-admin/common/middleware"
 )
 
 func init() {

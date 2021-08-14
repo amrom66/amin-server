@@ -9,7 +9,7 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/logger"
 	"gorm.io/gorm"
 
-	"go-admin/common/models"
+	"amin/common/models"
 )
 
 type Api struct {

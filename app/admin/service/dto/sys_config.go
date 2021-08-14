@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"go-admin/app/admin/models/system"
-	"go-admin/common/apis"
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"amin/app/admin/models/system"
+	"amin/common/apis"
+	"amin/common/dto"
+	common "amin/common/models"
 )
 
 // SysConfigSearch 列表或者搜索使用结构体

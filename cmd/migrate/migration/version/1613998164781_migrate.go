@@ -1,13 +1,13 @@
 package version
 
 import (
-	"go-admin/app/admin/models"
-	//"go-admin/app/admin/models"
+	"amin/app/admin/models"
+	//"amin/app/admin/models"
 	"gorm.io/gorm"
 	"runtime"
 
-	"go-admin/cmd/migrate/migration"
-	common "go-admin/common/models"
+	"amin/cmd/migrate/migration"
+	common "amin/common/models"
 )
 
 func init() {

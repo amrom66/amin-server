@@ -6,11 +6,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/actions"
-	"go-admin/common/apis"
+	"amin/app/admin/models"
+	"amin/app/admin/service"
+	"amin/app/admin/service/dto"
+	"amin/common/actions"
+	"amin/common/apis"
 )
 
 type SysFileInfo struct {

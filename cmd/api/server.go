@@ -15,12 +15,12 @@ import (
 	"github.com/go-admin-team/go-admin-core/config/source/file"
 	"github.com/spf13/cobra"
 
+	"amin/app/admin/router"
+	"amin/app/jobs"
+	"amin/common/database"
+	"amin/common/global"
 	"github.com/go-admin-team/go-admin-core/sdk/config"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/logger"
-	"go-admin/app/admin/router"
-	"go-admin/app/jobs"
-	"go-admin/common/database"
-	"go-admin/common/global"
 )
 
 var (

@@ -12,13 +12,13 @@ import (
 	"github.com/go-admin-team/go-admin-core/config/source/file"
 	"github.com/spf13/cobra"
 
+	"amin/cmd/migrate/migration"
+	_ "amin/cmd/migrate/migration/version"
+	_ "amin/cmd/migrate/migration/version-local"
+	"amin/common/database"
+	"amin/common/models"
 	"github.com/go-admin-team/go-admin-core/sdk/config"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/logger"
-	"go-admin/cmd/migrate/migration"
-	_ "go-admin/cmd/migrate/migration/version"
-	_ "go-admin/cmd/migrate/migration/version-local"
-	"go-admin/common/database"
-	"go-admin/common/models"
 )
 
 var (

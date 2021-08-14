@@ -1,9 +1,9 @@
 package dto
 
 import (
-	"go-admin/app/admin/models"
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"amin/app/admin/models"
+	"amin/common/dto"
+	common "amin/common/models"
 )
 
 type SysFileInfoSearch struct {

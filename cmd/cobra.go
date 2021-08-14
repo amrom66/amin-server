@@ -1,19 +1,19 @@
 package cmd
 
 import (
+	"amin/common/global"
 	"errors"
 	"fmt"
-	"go-admin/common/global"
 	"os"
 
 	"github.com/go-admin-team/go-admin-core/sdk/pkg"
 
 	"github.com/spf13/cobra"
 
-	"go-admin/cmd/api"
-	"go-admin/cmd/config"
-	"go-admin/cmd/migrate"
-	"go-admin/cmd/version"
+	"amin/cmd/api"
+	"amin/cmd/config"
+	"amin/cmd/migrate"
+	"amin/cmd/version"
 )
 
 var rootCmd = &cobra.Command{

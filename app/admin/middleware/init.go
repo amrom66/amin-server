@@ -3,7 +3,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"go-admin/common/middleware"
+	"amin/common/middleware"
 )
 
 func InitMiddleware(r *gin.Engine) {

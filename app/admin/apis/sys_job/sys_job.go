@@ -7,9 +7,9 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 
-	"go-admin/app/admin/service"
-	"go-admin/common/apis"
-	"go-admin/common/dto"
+	"amin/app/admin/service"
+	"amin/common/apis"
+	"amin/common/dto"
 )
 
 type SysJob struct {

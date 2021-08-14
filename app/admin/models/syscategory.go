@@ -1,7 +1,7 @@
 package models
 
 import (
-	"go-admin/common/models"
+	"amin/common/models"
 )
 
 type SysCategory struct {

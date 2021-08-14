@@ -7,10 +7,10 @@ import (
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
 	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 
-	"go-admin/app/admin/models/system"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/apis"
+	"amin/app/admin/models/system"
+	"amin/app/admin/service"
+	"amin/app/admin/service/dto"
+	"amin/common/apis"
 )
 
 type SysConfig struct {
