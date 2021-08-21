@@ -23,16 +23,16 @@ settings:
     enableddb: false
   jwt:
     # token 密钥，生产环境时及的修改
-    secret: go-admin
+    secret: amin
     # token 过期时间 单位：秒
     timeout: 3600
   database:
     # 数据库类型 mysql，sqlite3， postgres
     driver: mysql
     # 数据库连接字符串 mysql 缺省信息 charset=utf8&parseTime=True&loc=Local&timeout=1000ms
-    source: root:369369@tcp(149.28.60.76:3306)/goadmin?charset=utf8&parseTime=True&loc=Local&timeout=1000ms
+    source: root:369369@tcp(121.5.240.206:3306)/amin?charset=utf8&parseTime=True&loc=Local&timeout=1000ms
   gen:
     # 代码生成读取的数据库名称
-    dbname: goadmin
+    dbname: amin
     # 代码生成是使用前端代码存放位置，需要指定到src文件夹，相对路径
-    frontpath: ../go-admin-ui/src
+    frontpath: ../amin-ui/src
