@@ -20,7 +20,7 @@ var rootCmd = &cobra.Command{
 	Use:          "amin",
 	Short:        "amin",
 	SilenceUsage: true,
-	Long:         `amin`,
+	Long:         `amin是一个后台管理系统`,
 	Args: func(cmd *cobra.Command, args []string) error {
 		if len(args) < 1 {
 			tip()
