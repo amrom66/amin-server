@@ -4,11 +4,11 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/config"
+	"amin/core/sdk/pkg"
+	jwt "amin/core/sdk/pkg/jwtauth"
+	"amin/core/sdk/pkg/jwtauth/user"
+	"amin/core/sdk/pkg/response"
 	"github.com/mojocn/base64Captcha"
 	"github.com/mssola/user_agent"
 

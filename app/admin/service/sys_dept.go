@@ -2,7 +2,7 @@ package service
 
 import (
 	"errors"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 
 	"gorm.io/gorm"
 

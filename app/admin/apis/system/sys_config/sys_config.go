@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/pkg/jwtauth/user"
+	"amin/core/sdk/pkg/response"
 
 	"amin/app/admin/models/system"
 	"amin/app/admin/service"

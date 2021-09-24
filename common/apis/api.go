@@ -2,11 +2,11 @@ package apis
 
 import (
 	"encoding/json"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/logger"
+	"amin/core/sdk/pkg/logger"
 	"gorm.io/gorm"
 
 	"amin/common/models"

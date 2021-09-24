@@ -2,8 +2,8 @@ package system
 
 import (
 	"fmt"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	log "amin/core/logger"
+	"amin/core/sdk/pkg"
 	"gorm.io/gorm"
 )
 

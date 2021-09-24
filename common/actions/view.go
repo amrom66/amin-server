@@ -5,13 +5,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	log "amin/core/logger"
+	"amin/core/sdk/pkg"
 	"gorm.io/gorm"
 
 	"amin/common/dto"
 	"amin/common/models"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/pkg/response"
 )
 
 // ViewAction 通用详情动作

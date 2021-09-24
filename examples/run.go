@@ -3,13 +3,13 @@
 package main
 
 import (
-	"github.com/go-admin-team/go-admin-core/sdk"
+	"amin/core/sdk"
 	"log"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 
-	myCasbin "github.com/go-admin-team/go-admin-core/sdk/pkg/casbin"
+	myCasbin "amin/core/sdk/pkg/casbin"
 	"gorm.io/driver/mysql"
 )
 

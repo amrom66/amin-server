@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/pkg"
+	"amin/core/sdk/pkg/jwtauth/user"
+	"amin/core/sdk/pkg/response"
 	"gorm.io/gorm"
 
 	"amin/app/admin/models/tools"

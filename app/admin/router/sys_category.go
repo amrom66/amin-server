@@ -7,7 +7,7 @@ import (
 	"amin/app/admin/models"
 	"amin/app/admin/service/dto"
 	"amin/common/actions"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
+	jwt "amin/core/sdk/pkg/jwtauth"
 )
 
 func init() {
