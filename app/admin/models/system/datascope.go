@@ -2,11 +2,11 @@ package system
 
 import (
 	"errors"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 	"gorm.io/gorm"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
+	log "amin/core/logger"
+	"amin/core/sdk/config"
 )
 
 type DataPermission struct {

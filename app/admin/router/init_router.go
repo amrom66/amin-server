@@ -1,18 +1,18 @@
 package router
 
 import (
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk"
+	"amin/core/sdk/pkg"
 	"os"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
+	log "amin/core/logger"
 
 	"amin/app/admin/middleware"
 	"amin/app/admin/middleware/handler"
 	common "amin/common/middleware"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
+	"amin/core/sdk/config"
 )
 
 // InitRouter 路由初始化，不要怀疑，这里用到了

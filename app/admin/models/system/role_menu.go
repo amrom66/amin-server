@@ -2,7 +2,7 @@ package system
 
 import (
 	"fmt"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 
 	"github.com/casbin/casbin/v2"
 	"gorm.io/gorm"

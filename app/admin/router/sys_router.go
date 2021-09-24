@@ -12,8 +12,8 @@ import (
 	. "amin/app/admin/apis/tools"
 	"amin/app/admin/middleware/handler"
 	_ "amin/docs"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/ws"
+	jwt "amin/core/sdk/pkg/jwtauth"
+	"amin/core/sdk/pkg/ws"
 
 	"github.com/gin-gonic/gin"
 	ginSwagger "github.com/swaggo/gin-swagger"

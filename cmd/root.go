@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 
 	"github.com/spf13/cobra"
 

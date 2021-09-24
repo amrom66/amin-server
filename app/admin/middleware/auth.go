@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"amin/app/admin/middleware/handler"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
+	"amin/core/sdk/config"
+	jwt "amin/core/sdk/pkg/jwtauth"
 )
 
 // AuthInit jwt验证new

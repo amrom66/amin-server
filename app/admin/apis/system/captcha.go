@@ -2,9 +2,9 @@ package system
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/captcha"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/pkg"
+	"amin/core/sdk/pkg/captcha"
+	"amin/core/sdk/pkg/response"
 )
 
 func GenerateCaptchaHandler(c *gin.Context) {

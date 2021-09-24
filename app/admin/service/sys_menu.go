@@ -6,7 +6,7 @@ import (
 	cDto "amin/common/dto"
 	"amin/common/service"
 	"errors"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk/pkg"
 	"gorm.io/gorm"
 )
 

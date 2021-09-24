@@ -1,12 +1,12 @@
 package router
 
 import (
-	"github.com/go-admin-team/go-admin-core/sdk"
+	"amin/core/sdk"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/tools/transfer"
+	log "amin/core/logger"
+	"amin/core/tools/transfer"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

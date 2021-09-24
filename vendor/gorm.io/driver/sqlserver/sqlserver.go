@@ -17,9 +17,10 @@ import (
 )
 
 type Config struct {
-	DriverName string
-	DSN        string
-	Conn       gorm.ConnPool
+	DriverName        string
+	DSN               string
+	DefaultStringSize int
+	Conn              gorm.ConnPool
 }
 
 type Dialector struct {
@@ -43,6 +44,7 @@ func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 	// register callbacks
 	callbacks.RegisterDefaultCallbacks(db, &callbacks.Config{})
 	db.Callback().Create().Replace("gorm:create", Create)
+	db.Callback().Update().Replace("gorm:update", Update)
 
 	if dialector.DriverName == "" {
 		dialector.DriverName = "sqlserver"
@@ -172,7 +174,11 @@ func (dialector Dialector) DataTypeOf(field *schema.Field) string {
 		size := field.Size
 		hasIndex := field.TagSettings["INDEX"] != "" || field.TagSettings["UNIQUE"] != ""
 		if (field.PrimaryKey || hasIndex) && size == 0 {
-			size = 256
+			if dialector.DefaultStringSize > 0 {
+				size = dialector.DefaultStringSize
+			} else {
+				size = 256
+			}
 		}
 		if size > 0 && size <= 4000 {
 			return fmt.Sprintf("nvarchar(%d)", size)

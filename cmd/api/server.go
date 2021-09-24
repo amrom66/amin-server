@@ -9,11 +9,11 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"amin/core/sdk"
+	"amin/core/sdk/pkg"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/config/source/file"
+	"amin/core/config/source/file"
 	"github.com/spf13/cobra"
 
 	"amin/app/admin/router"
@@ -21,8 +21,8 @@ import (
 	"amin/common/database"
 	"amin/common/global"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/logger"
+	"amin/core/sdk/config"
+	"amin/core/sdk/pkg/logger"
 )
 
 var (

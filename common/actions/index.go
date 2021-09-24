@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	log "amin/core/logger"
+	"amin/core/sdk/pkg"
+	"amin/core/sdk/pkg/response"
 	"gorm.io/gorm"
 
 	"amin/common/dto"

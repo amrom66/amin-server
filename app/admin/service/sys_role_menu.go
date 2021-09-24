@@ -1,7 +1,7 @@
 package service
 
 import (
-	log "github.com/go-admin-team/go-admin-core/logger"
+	log "amin/core/logger"
 	"amin/app/admin/models"
 	"amin/app/admin/models/system"
 	"amin/common/service"

@@ -2,7 +2,7 @@ package dto
 
 import (
 	"amin/common/global"
-	"github.com/go-admin-team/go-admin-core/tools/search"
+	"amin/core/tools/search"
 	"gorm.io/gorm"
 )
 

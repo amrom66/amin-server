@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"amin/core/sdk/config"
+	"amin/core/sdk/pkg"
+	"amin/core/sdk/pkg/response"
 
 	"amin/app/admin/models/tools"
 	"amin/common/apis"

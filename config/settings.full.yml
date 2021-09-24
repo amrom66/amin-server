@@ -5,7 +5,7 @@ settings:
     # 服务器ip，默认使用 0.0.0.0
     host: 0.0.0.0
     # 服务名称
-    name: testApp
+    name: amin
     # 端口号
     port: 8000 # 服务端口号
     readtimeout: 1
@@ -46,4 +46,4 @@ settings:
     # 代码生成读取的数据库名称
     dbname: dbname
     # 代码生成是使用前端代码存放位置，需要指定到src文件夹，相对路径
-    frontpath: ../go-admin-ui/src
+    frontpath: ../amin-ui/src

@@ -27,6 +27,7 @@ type Statement struct {
 	Dest                 interface{}
 	ReflectValue         reflect.Value
 	Clauses              map[string]clause.Clause
+	BuildClauses         []string
 	Distinct             bool
 	Selects              []string // selected columns
 	Omits                []string // omit columns
@@ -56,12 +57,12 @@ type StatementModifier interface {
 	ModifyStatement(*Statement)
 }
 
-// Write write string
+// WriteString write string
 func (stmt *Statement) WriteString(str string) (int, error) {
 	return stmt.SQL.WriteString(str)
 }
 
-// Write write string
+// WriteByte write byte
 func (stmt *Statement) WriteByte(c byte) error {
 	return stmt.SQL.WriteByte(c)
 }
@@ -128,6 +129,8 @@ func (stmt *Statement) QuoteTo(writer clause.Writer, field interface{}) {
 			stmt.QuoteTo(writer, d)
 		}
 		writer.WriteByte(')')
+	case clause.Expr:
+		v.Build(stmt)
 	case string:
 		stmt.DB.Dialector.QuoteTo(writer, v)
 	case []string:
@@ -151,7 +154,7 @@ func (stmt *Statement) Quote(field interface{}) string {
 	return builder.String()
 }
 
-// Write write string
+// AddVar add var
 func (stmt *Statement) AddVar(writer clause.Writer, vars ...interface{}) {
 	for idx, v := range vars {
 		if idx > 0 {
@@ -166,6 +169,8 @@ func (stmt *Statement) AddVar(writer clause.Writer, vars ...interface{}) {
 		case Valuer:
 			stmt.AddVar(writer, v.GormValue(stmt.Context, stmt.DB))
 		case clause.Expr:
+			v.Build(stmt)
+		case *clause.Expr:
 			v.Build(stmt)
 		case driver.Valuer:
 			stmt.Vars = append(stmt.Vars, v)
@@ -326,8 +331,10 @@ func (stmt *Statement) BuildCondition(query interface{}, args ...interface{}) []
 					} else if _, ok := v[key].(Valuer); ok {
 						conds = append(conds, clause.Eq{Column: key, Value: v[key]})
 					} else {
-						values := make([]interface{}, reflectValue.Len())
-						for i := 0; i < reflectValue.Len(); i++ {
+						// optimize reflect value length
+						valueLen := reflectValue.Len()
+						values := make([]interface{}, valueLen)
+						for i := 0; i < valueLen; i++ {
 							values[i] = reflectValue.Index(i).Interface()
 						}
 
@@ -339,6 +346,10 @@ func (stmt *Statement) BuildCondition(query interface{}, args ...interface{}) []
 			}
 		default:
 			reflectValue := reflect.Indirect(reflect.ValueOf(arg))
+			for reflectValue.Kind() == reflect.Ptr {
+				reflectValue = reflectValue.Elem()
+			}
+
 			if s, err := schema.Parse(arg, stmt.DB.cacheStore, stmt.DB.NamingStrategy); err == nil {
 				selectedColumns := map[string]bool{}
 				if idx == 0 {
@@ -390,8 +401,10 @@ func (stmt *Statement) BuildCondition(query interface{}, args ...interface{}) []
 				if len(args) == 1 {
 					switch reflectValue.Kind() {
 					case reflect.Slice, reflect.Array:
-						values := make([]interface{}, reflectValue.Len())
-						for i := 0; i < reflectValue.Len(); i++ {
+						// optimize reflect value length
+						valueLen := reflectValue.Len()
+						values := make([]interface{}, valueLen)
+						for i := 0; i < valueLen; i++ {
 							values[i] = reflectValue.Index(i).Interface()
 						}
 
@@ -495,7 +508,6 @@ func (stmt *Statement) clone() *Statement {
 	return newStmt
 }
 
-// Helpers
 // SetColumn set column's value
 //   stmt.SetColumn("Name", "jinzhu") // Hooks Method
 //   stmt.SetColumn("Name", "jinzhu", true) // Callbacks Method
@@ -539,6 +551,11 @@ func (stmt *Statement) SetColumn(name string, value interface{}, fromCallbacks .
 					field.Set(stmt.ReflectValue.Index(stmt.CurDestIndex), value)
 				}
 			case reflect.Struct:
+				if !stmt.ReflectValue.CanAddr() {
+					stmt.AddError(ErrInvalidValue)
+					return
+				}
+
 				field.Set(stmt.ReflectValue, value)
 			}
 		} else {

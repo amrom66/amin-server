@@ -70,13 +70,13 @@ func _1599190683670Test(db *gorm.DB, version string) error {
 				UserId:   1,
 				Username: "admin",
 				Password: "123456",
-				NickName: "zhangwj",
-				Phone:    "13818888888",
+				NickName: "linjb",
+				Phone:    "15195355289",
 				RoleId:   1,
 				Salt:     "",
 				Avatar:   "",
 				Sex:      "1",
-				Email:    "1@qq.com",
+				Email:    "1576654308@qq.com",
 				DeptId:   1,
 				PostId:   1,
 				Remark:   "",
@@ -120,7 +120,7 @@ func _1599190683670Test(db *gorm.DB, version string) error {
 		}
 
 		list10 := []models.SysSetting{
-			{1, "go-admin管理系统", "https://gitee.com/mydearzwj/image/raw/master/img/go-admin.png", common.ModelTime{CreatedAt: time.Now(), UpdatedAt: time.Now()}},
+			{1, "amin管理系统", "https://blog.amrom.tk/images/me/touxiang.jpeg", common.ModelTime{CreatedAt: time.Now(), UpdatedAt: time.Now()}},
 		}
 
 		list11 := []models.SysJob{

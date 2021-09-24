@@ -5,7 +5,7 @@ import (
 	"github.com/alibaba/sentinel-golang/core/system"
 	"github.com/gin-gonic/gin"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
+	log "amin/core/logger"
 )
 
 // Sentinel 限流
