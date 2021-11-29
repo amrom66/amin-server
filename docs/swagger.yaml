@@ -527,11 +527,10 @@ info:
   contact: {}
   description: |-
     基于Gin + Vue + Element UI的前后端分离权限管理系统的接口文档
-    添加qq群: 74520518 进入技术交流群 请备注，谢谢！
   license:
     name: MIT
-    url: https://github.com/go-admin-team/go-admin/blob/master/LICENSE.md
-  title: go-admin API
+    url: 
+  title: amin API
   version: 1.0.1
 paths:
   /api/v1/db/columns/page:

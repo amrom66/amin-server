@@ -21,7 +21,7 @@ var doc = `{
         "contact": {},
         "license": {
             "name": "MIT",
-            "url": "https://github.com/go-admin-team/go-admin/blob/master/LICENSE.md"
+            "url": ""
         },
         "version": "{{.Version}}"
     },
@@ -2705,8 +2705,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "",
 	Schemes:     []string{},
-	Title:       "go-admin API",
-	Description: "基于Gin + Vue + Element UI的前后端分离权限管理系统的接口文档\n添加qq群: 74520518 进入技术交流群 请备注，谢谢！",
+	Title:       "amin API",
+	Description: "基于Gin + Vue + Element UI的前后端分离权限管理系统的接口文档",
 }
 
 type s struct{}

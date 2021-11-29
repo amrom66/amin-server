@@ -1,7 +1,7 @@
 package global
 
 const (
-	// go-admin Version Info
+	// amin Version Info
 	Version = "1.3.0-rc.0"
 )
 

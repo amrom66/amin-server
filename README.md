@@ -97,11 +97,11 @@ vi ./config/setting.yml
 #### 初始化数据库，以及服务启动
 ```
 # 首次配置需要初始化数据库资源信息
-./admin migrate -c config/settings.yml
+./amin migrate -c config/settings.yml
 
 
 # 启动项目，也可以用IDE进行调试
-./admin server -c config/settings.yml -p 8000
+./amin server -c config/settings.yml -p 8000
 
 ```
 
