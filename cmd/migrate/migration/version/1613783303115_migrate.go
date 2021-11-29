@@ -4,8 +4,9 @@ import (
 	"amin/app/admin/models/system"
 
 	//"amin/app/admin/models"
-	"gorm.io/gorm"
 	"runtime"
+
+	"gorm.io/gorm"
 
 	"amin/cmd/migrate/migration"
 	common "amin/common/models"
@@ -20,7 +21,7 @@ func _1613783303115Test(db *gorm.DB, version string) error {
 	return db.Transaction(func(tx *gorm.DB) error {
 
 		//修改字段类型
-		err := tx.Model(&system.SysDictType{}).Select("create_by").Not("create_by  > 0").Update("create_by", "0").Error
+		err := tx.Model(&system.SysDictType{}).Select("create_by").Not("create_by > 0").Update("create_by", "0").Error
 		if err != nil {
 			return err
 		}
