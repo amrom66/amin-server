@@ -1,15 +1,16 @@
 package migrate
 
 import (
-	"bytes"
-	"fmt"
 	"amin/core/sdk"
 	"amin/core/sdk/pkg"
+	"bytes"
+	"fmt"
 	"strconv"
 	"text/template"
 	"time"
 
 	"amin/core/config/source/file"
+
 	"github.com/spf13/cobra"
 
 	"amin/cmd/migrate/migration"
@@ -40,7 +41,7 @@ var (
 func init() {
 	StartCmd.PersistentFlags().StringVarP(&configYml, "config", "c", "config/settings.yml", "Start server with provided configuration file")
 	StartCmd.PersistentFlags().BoolVarP(&generate, "generate", "g", false, "generate migration file")
-	StartCmd.PersistentFlags().BoolVarP(&goAdmin, "goAdmin", "a", false, "generate go-admin migration file")
+	StartCmd.PersistentFlags().BoolVarP(&goAdmin, "goAdmin", "a", false, "generate amin migration file")
 	StartCmd.PersistentFlags().StringVarP(&host, "domain", "d", "*", "select tenant host")
 }
 

@@ -9,7 +9,7 @@ const INDEX = `
 <html>
 <head>
 <meta charset="utf-8">
-<title>GO-ADMIN欢迎您</title>
+<title>amin欢迎您</title>
 <style>
 body{
   margin:0; 
@@ -28,7 +28,7 @@ $(function(){
 </script>
 </head>
 <body>
-<iframe id="iframe" frameborder="0" src="https://doc.go-admin.dev" style="width:100%;"></iframe>
+<h1> 首页</h1>
 </body>
 </html>
 `

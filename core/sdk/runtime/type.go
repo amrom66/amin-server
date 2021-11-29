@@ -3,8 +3,9 @@ package runtime
 import (
 	"net/http"
 
-	"github.com/casbin/casbin/v2"
 	"amin/core/logger"
+
+	"github.com/casbin/casbin/v2"
 	"github.com/robfig/cron/v3"
 	"gorm.io/gorm"
 )
@@ -23,7 +24,7 @@ type Runtime interface {
 	SetEngine(engine http.Handler)
 	GetEngine() http.Handler
 
-	//使用go-admin定义的logger，参考来源go-micro
+	//使用amin定义的logger，参考来源go-micro
 	SetLogger(logger logger.Logger)
 	GetLogger() logger.Logger
 

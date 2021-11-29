@@ -14,7 +14,7 @@ import (
 
 const (
 	TrafficKey = "X-Request-Id"
-	LoggerKey  = "_go-admin-logger-request"
+	LoggerKey  = "_amin-logger-request"
 )
 
 func CompareHashAndPassword(e string, p string) (bool, error) {
